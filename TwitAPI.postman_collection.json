@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "1be8d794-2fa9-41b8-80ae-94cf7f431c25",
+		"name": "TwitAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Validate Twet",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:9090/api/validate-tweet?id=1223654996337516544",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"validate-tweet"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1223654996337516544"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validated Tweets",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9090/api/validated-tweets?user=VideojuegosGAME",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"validated-tweets"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "VideojuegosGAME"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Timeline",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9090/api/check-timeline",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"check-timeline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hashtag Ranking",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"type": "text",
+						"value": "2",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9090/api/hashtag-ranking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"hashtag-ranking"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
